@@ -1,0 +1,19 @@
+<odoo>
+    <template id="TuanHA_helloworld" inherit_id="website.snippets" name="Block About">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="TuanHA_helloworld.about" t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg" />
+            <t t-snippet="TuanHA_helloworld.modal" t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg" /> 
+        </xpath>
+    </template>
+    <template id="about_border_options" inherit_id="website.snippet_options" name="About Border Options">
+        <xpath expr="." position="inside">
+            <div data-selector=".about-us" data-js="AboutBorder">
+                <we-row string="Border Style">
+                    <we-button data-border="solid" class="o_we_bg_brand_primary">Solid</we-button>
+                    <we-button data-border="dotted" class="o_we_bg_brand_primary">Dotted</we-button>
+                    <we-button data-border="double" class="o_we_bg_brand_primary">Double</we-button>
+                </we-row>
+            </div>
+        </xpath>
+    </template>
+</odoo>

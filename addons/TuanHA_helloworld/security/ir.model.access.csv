@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+TuanHA_helloworld.access_TuanHA_helloworld_course_user,Course User,TuanHA_helloworld.model_course_odoo,course_group_user,1,0,0,0
+TuanHA_helloworld.access_TuanHA_helloworld_course_manager,Course Manager,TuanHA_helloworld.model_course_odoo,course_group_manager,1,1,1,1
+TuanHA_helloworld.access_TuanHA_helloworld_lesson_user,Course User,TuanHA_helloworld.model_lesson_odoo,lesson_group_user,1,0,0,0
+TuanHA_helloworld.access_TuanHA_helloworld_lesson_manager,Course Manager,TuanHA_helloworld.model_lesson_odoo,lesson_group_manager,1,1,1,1
+TuanHA_helloworld.access_website_user,Website User,website.model_website,base.group_user,1,0,0,0
+TuanHA_helloworld.access_website_manager,Website Manager,website.model_website,base.group_system,1,1,1,1

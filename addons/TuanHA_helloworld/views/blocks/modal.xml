@@ -1,0 +1,33 @@
+
+<odoo>
+    <template id="modal" name="Modal">
+        <div class="s_popup o_snippet_invisible" data-vcss="001">
+            <div class="modal fade s_popup_middle" style="background-color: var(--black-50) !important;" data-show-after="5000" data-display="afterDelay" data-consents-duration="7" data-bs-focus="false" data-bs-backdrop="false" tabindex="-1" role="dialog" aria-label="Popup">
+                <div class="modal-dialog d-flex">
+                    <div class="modal-content oe_structure">
+                        <!-- Close button -->
+                        <div class="s_popup_close js_close_popup o_we_no_overlay o_not_editable" aria-label="Close">&#215;</div>
+                        
+                        <!-- Modal Header -->
+                        <section class="s_banner oe_img_bg o_bg_img_center" data-snippet="s_banner">
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-10 offset-lg-1 text-center o_cc o_cc1 jumbotron pt48">
+                                        <h2 class="display-3-fs">Modal Title</h2>
+                                        <p class="lead">This is the modal content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!-- Modal Footer (if needed) -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary js_close_popup" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

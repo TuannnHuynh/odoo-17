@@ -1,0 +1,45 @@
+<odoo>
+    <record id="view_res_company_form_inherit_social_media" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.social_media</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='social_media']" position="replace">
+                <group string="Social Media" name="social_media">
+                    <group>
+                        <field name="twitter_account" placeholder="Twitter Account" string="Twitter"/>
+                        <field name="twitter_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="facebook_account" placeholder="Facebook Account" string="Facebook"/>
+                        <field name="facebook_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="github_account" placeholder="GitHub Account" string="GitHub"/>
+                        <field name="github_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="linkedin_account" placeholder="LinkedIn Account" string="LinkedIn"/>
+                        <field name="linkedin_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="youtube_account" placeholder="YouTube Account" string="YouTube"/>
+                        <field name="youtube_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="instagram_account" placeholder="Instagram Account" string="Instagram"/>
+                        <field name="instagram_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="tiktok_account" placeholder="TikTok Account" string="TikTok"/>
+                        <field name="tiktok_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                    <group>
+                        <field name="zalo_account" placeholder="Zalo Account" string="Zalo"/>
+                        <field name="zalo_icon" widget="image" style="width: 78px; height: 78px;"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

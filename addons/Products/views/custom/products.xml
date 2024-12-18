@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_product_main" inherit_id="website_sale.product" name="Custom Product Details">
+        <xpath expr="//div[@id='product_detail_main']" position="inside">
+            <div class="col-lg-3 user-info-box">
+                <!-- Thêm phần User Information -->
+                <h4 class="text-primary">User Information</h4>
+                <t t-if="request.env.user">
+                    <p><strong>Name:</strong>
+                        <t t-esc="request.env.user.name" />
+                    </p>
+                    <p><strong>Email:</strong>
+                        <t t-esc="request.env.user.email" />
+                    </p>
+                    <p><strong>Phone:</strong>
+                        <t t-esc="request.env.user.phone" />
+                    </p>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>
