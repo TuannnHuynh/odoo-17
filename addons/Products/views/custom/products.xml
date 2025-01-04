@@ -6,15 +6,33 @@
                 <!-- Thêm phần User Information -->
                 <h4 class="text-primary">User Information</h4>
                 <t t-if="request.env.user">
+                    <div class="user-avatar mb-3">
+                        <t t-if="product.create_uid.image_1920">
+                            <img t-att-src="'data:image/png;base64,' + product.create_uid.image_1920.decode('utf-8')" 
+                                alt="User Avatar" class="img-thumbnail" style="max-width: 150px;" />
+                        </t>
+                        <t t-else="">
+                            <img src="/Products/static/src/img/default_avatar.jpg" 
+                                alt="Default Avatar" class="img-thumbnail" style="max-width: 150px;" />
+                        </t>
+                    </div>
                     <p><strong>Name:</strong>
-                        <t t-esc="request.env.user.name" />
+                        <t t-esc="product.create_uid.name" />
                     </p>
                     <p><strong>Email:</strong>
-                        <t t-esc="request.env.user.email" />
+                        <t t-esc="product.create_uid.email" />
                     </p>
-                    <p><strong>Phone:</strong>
-                        <t t-esc="request.env.user.phone" />
+                    <p><strong>Phone:</strong> 
+                        <t t-esc="product.create_uid.phone" />
                     </p>
+                    <t t-if="request.env.company.user_premium">
+                        <div class="social-premium">
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="social-normal">
+                        </div>
+                    </t>
                 </t>
             </div>
         </xpath>

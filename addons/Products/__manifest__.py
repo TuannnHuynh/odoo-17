@@ -11,7 +11,7 @@
     'summary': 'Module products',
     'description': '',
 
-    'depends': ["website","product"],
+    'depends': ["website","product","website_sale"],
 
     'installable': True,
     'auto_install': False,
@@ -19,10 +19,12 @@
 
     'data': [
         'views/custom/products.xml',
+        'views/settings/social.xml',
     ],
     'assets': {
         'web.assets_frontend':[
             'Products/static/src/css/custom_product.css',
+            'Products/static/src/js/social.js',
         ],
         'point_of_sale._assets_pos': [
             'Products/static/src/**/*'
